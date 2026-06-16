@@ -6,7 +6,7 @@
   <meta name="description" content="Portfólio profissional de Emanuel Henry, Software Engineer & Full-Stack Developer. Experiente em React, Next.js, Node.js, React Native e TypeScript.">
   <meta name="keywords" content="Emanuel Henry, Software Engineer, Full-Stack Developer, Node.js, React, React Native, TypeScript, Recife, Porto Digital, CESAR School, Web Development">
   <meta name="author" content="Emanuel Henry Silva Cardoso de Almeida">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://github.com/henryzera">
@@ -20,10 +20,10 @@
   <meta property="twitter:description" content="Engenheiro de Software focado no ecossistema TypeScript, construindo soluções escaláveis de ponta a ponta.">
 
   <title>Emanuel Henry | Software Engineer & Full-Stack Developer</title>
-  
+
   <!-- CSS Link -->
   <link rel="stylesheet" href="style.css">
-  
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/127393433?v=4">
 </head>
@@ -32,152 +32,152 @@
 
   <!-- ==========================================================================
        Header / Navigation
-       ========================================================================== */ -->
+       ========================================================================== -->
   <header class="header" id="header">
     <div class="container nav-container">
       <a href="#hero" class="logo" aria-label="Ir para o início">
         <span>EH</span>.dev
       </a>
-      
-      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Abrir menu de navegação">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      
+
       <nav class="nav-menu-wrapper">
         <ul id="primary-navigation" class="nav-menu" data-visible="false">
-          <li><a href="#about" class="nav-link">Sobre</a></li>
-          <li><a href="#technologies" class="nav-link">Tecnologias</a></li>
-          <li><a href="#experience" class="nav-link">Experiência</a></li>
-          <li><a href="#projects" class="nav-link">Projetos</a></li>
-          <li><a href="#contact" class="btn-nav">Contato</a></li>
+          <li><a href="#stack" class="nav-link" data-i18n="nav.stack">Stack</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projetos</a></li>
+          <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experiência</a></li>
+          <li><a href="#education" class="nav-link" data-i18n="nav.education">Formação</a></li>
+          <li><a href="#contact" class="btn-nav" data-i18n="nav.contact">Contato</a></li>
+
+          <!-- Language Switch (visible inside mobile menu) -->
+          <li class="nav-lang">
+            <div class="lang-switch" role="group" aria-label="Selecionar idioma">
+              <button class="lang-btn" data-lang="pt" type="button" aria-pressed="true">PT</button>
+              <button class="lang-btn" data-lang="en" type="button" aria-pressed="false">EN</button>
+            </div>
+          </li>
         </ul>
       </nav>
+
+      <div class="nav-actions">
+        <!-- Language Switch (desktop header) -->
+        <div class="lang-switch lang-switch--header" role="group" aria-label="Selecionar idioma">
+          <button class="lang-btn" data-lang="pt" type="button" aria-pressed="true">PT</button>
+          <button class="lang-btn" data-lang="en" type="button" aria-pressed="false">EN</button>
+        </div>
+
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Abrir menu de navegação">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <!-- ==========================================================================
        Hero Section
-       ========================================================================== */ -->
+       ========================================================================== -->
   <section id="hero" class="hero">
     <div class="container hero-content reveal">
       <div class="hero-avatar-container">
-        <img src="assets/profile - cópia.jpeg" alt="Foto de perfil profissional de Emanuel Henry" class="hero-avatar">
-      </div>
-      <div class="status-badge">
-        <span class="status-dot"></span>
-        <span>Software Engineer @ Hubcar</span>
+        <img src="assets/profile - cópia.jpeg" alt="Foto de perfil profissional de Emanuel Henry" class="hero-avatar">
       </div>
       <h1 class="hero-title">
         Emanuel Henry
-        <span>Full-Stack Developer</span>
+        <span data-i18n="hero.role">Software Engineer</span>
       </h1>
-      <p class="hero-description">
-        Desenvolvendo aplicações web e mobile de alto desempenho com o ecossistema <strong>TypeScript</strong> (React, Next.js, Node.js e React Native). Foco em arquiteturas limpas e performance.
+      <p class="hero-description" data-i18n-html="hero.desc">
+        Engenheiro de software full-stack construindo aplicações web e mobile de alto desempenho com o ecossistema <strong>TypeScript</strong> — React, Next.js, Node.js e React Native.
       </p>
       <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-        <a href="#contact" class="btn btn-secondary">Entrar em Contato</a>
+        <a href="#contact" class="btn btn-primary" data-i18n="hero.btnContact">Entrar em Contato</a>
+        <a href="assets/curriculo-emanuel-henry.pdf" download class="btn btn-secondary" data-i18n="hero.btnCV">Baixar Currículo</a>
       </div>
+      <ul class="hero-social" aria-label="Links sociais">
+        <li>
+          <a href="https://linkedin.com/in/emanuel-henry-3728a9303" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/henryzera" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:emanuelhenrysc@gmail.com" aria-label="E-mail">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 
   <!-- ==========================================================================
-       Sobre Mim Section
-       ========================================================================== */ -->
-  <section id="about" class="container section-padding">
-    <div class="section-header reveal-up">
-      <span class="section-tag">Sobre Mim</span>
-      <h2 class="section-title">Minha Trajetória</h2>
-      <p class="section-subtitle">Engenharia de software focada no desenvolvimento de soluções de ponta a ponta.</p>
-    </div>
-    
-    <div class="about-grid">
-      <div class="about-text reveal-left">
-        <p>
-          Minha jornada na engenharia de software é guiada pelo compromisso em construir produtos robustos e escaláveis. Atualmente, atuo como <strong>Software Engineer na Hubcar</strong>, desenvolvendo portais analíticos de alta performance e APIs rápidas com modelagem de dados complexos.
-        </p>
-        <p>
-          Minha formação de base ocorre na <strong>CESAR School</strong> em Análise e Desenvolvimento de Sistemas (com término em 2026.1). Tive a oportunidade de aplicar conceitos ágeis (Scrum/Kanban) na prática, além de atuar no desenvolvimento acelerado de MVPs de inovação como Residente Tecnológico no <strong>Porto Digital</strong>.
-        </p>
-        <p>
-          Acredito fortemente que código limpo e a aplicação de boas práticas de design de software (como <strong>Clean Architecture</strong> e <strong>SOLID</strong>) são diferenciais primordiais na saúde e manutenção de sistemas em produção real.
-        </p>
+       Current Position Section
+       ========================================================================== -->
+  <section id="current" class="container section-padding-sm">
+    <div class="current-block reveal-up">
+      <div class="current-now">
+        <span class="status-dot"></span>
+        <span data-i18n="current.label">Atuação atual</span>
       </div>
-      
-      <div class="about-cards-container stagger-grid">
-        <div class="about-card reveal-up">
-          <div class="about-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
-          </div>
-          <h3>Formação Sólida</h3>
-          <p>CESAR School. Análise e Desenvolvimento de Sistemas (2026.1).</p>
-        </div>
-        
-        <div class="about-card reveal-up">
-          <div class="about-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          </div>
-          <h3>Foco Tecnológico</h3>
-          <p>Ecossistema TypeScript: Next.js, Node.js e React Native.</p>
-        </div>
-        
-        <div class="about-card reveal-up">
-          <div class="about-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 0-10 10c0 5.25 10 12 10 12s10-6.75 10-12a10 10 0 0 0-10-10z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <h3>Localização</h3>
-          <p>Recife, PE. Polo tecnológico nacional ativo.</p>
-        </div>
-        
-        <div class="about-card reveal-up">
-          <div class="about-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3>Soft Skills</h3>
-          <p>Ownership, liderança de times técnicos e comunicação assertiva.</p>
+      <div class="current-body">
+        <h2 class="current-role">
+          <span data-i18n="current.role">Software Engineer</span>
+          <span class="current-at" data-i18n="current.at">na</span>
+          <span class="current-company">Hubcar</span>
+        </h2>
+        <p class="current-desc" data-i18n="current.desc">
+          Construindo portais analíticos de alta performance e APIs escaláveis de ponta a ponta, com foco em arquitetura limpa e modelagem de dados complexos.
+        </p>
+        <div class="current-stack">
+          <span class="stack-pill">Full-Stack</span>
+          <span class="stack-pill">React</span>
+          <span class="stack-pill">Next.js</span>
+          <span class="stack-pill">Node.js</span>
+          <span class="stack-pill">PostgreSQL</span>
+          <span class="stack-pill">MongoDB</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ==========================================================================
-       Tecnologias Section
-       ========================================================================== */ -->
-  <section id="technologies" class="container section-padding">
-    <div class="section-header reveal-up">
-      <span class="section-tag">Habilidades</span>
-      <h2 class="section-title">Tecnologias & Domínios</h2>
-      <p class="section-subtitle">Ferramentas e conceitos práticos aplicados diariamente em engenharia de software.</p>
+       Tech Stack Section
+       ========================================================================== -->
+  <section id="stack" class="container section-padding">
+    <div class="section-header section-header--center reveal-up">
+      <span class="section-tag" data-i18n="stack.tag">Habilidades</span>
+      <h2 class="section-title" data-i18n="stack.title">Tech Stack</h2>
+      <p class="section-subtitle" data-i18n="stack.subtitle">Ferramentas e tecnologias que aplico diariamente em engenharia de software.</p>
     </div>
-    
+
     <div class="tech-grid stagger-grid">
       <!-- Frontend -->
       <div class="tech-card reveal-up">
         <div class="tech-category-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
         </div>
-        <h3>Front-End</h3>
+        <h3 data-i18n="stack.frontend">Frontend</h3>
         <ul class="tech-list">
           <li class="tech-item">
             <div class="tech-item-info">
               <span class="tech-item-name">React / Next.js</span>
-              <span class="tech-item-desc" data-target="90" data-label="Avançado">Avançado (0%)</span>
+              <span class="tech-item-desc" data-target="92" data-level="advanced">Avançado (0%)</span>
             </div>
-            <div class="tech-bar"><div class="tech-progress" data-width="90%"></div></div>
+            <div class="tech-bar"><div class="tech-progress" data-width="92%"></div></div>
           </li>
           <li class="tech-item">
             <div class="tech-item-info">
-              <span class="tech-item-name">JavaScript / TypeScript</span>
-              <span class="tech-item-desc" data-target="95" data-label="Avançado">Avançado (0%)</span>
+              <span class="tech-item-name">TypeScript / JavaScript</span>
+              <span class="tech-item-desc" data-target="95" data-level="advanced">Avançado (0%)</span>
             </div>
             <div class="tech-bar"><div class="tech-progress" data-width="95%"></div></div>
           </li>
           <li class="tech-item">
             <div class="tech-item-info">
-              <span class="tech-item-name">HTML5 / CSS3</span>
-              <span class="tech-item-desc" data-target="90" data-label="Proficiente">Proficiente (0%)</span>
+              <span class="tech-item-name">HTML5 / CSS3 / Tailwind</span>
+              <span class="tech-item-desc" data-target="90" data-level="proficient">Proficiente (0%)</span>
             </div>
             <div class="tech-bar"><div class="tech-progress" data-width="90%"></div></div>
           </li>
@@ -189,81 +189,105 @@
         <div class="tech-category-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
         </div>
-        <h3>Back-End</h3>
+        <h3 data-i18n="stack.backend">Backend</h3>
         <ul class="tech-list">
           <li class="tech-item">
             <div class="tech-item-info">
               <span class="tech-item-name">Node.js</span>
-              <span class="tech-item-desc" data-target="90" data-label="Avançado">Avançado (0%)</span>
+              <span class="tech-item-desc" data-target="92" data-level="advanced">Avançado (0%)</span>
             </div>
-            <div class="tech-bar"><div class="tech-progress" data-width="90%"></div></div>
+            <div class="tech-bar"><div class="tech-progress" data-width="92%"></div></div>
           </li>
           <li class="tech-item">
             <div class="tech-item-info">
               <span class="tech-item-name">Express / Fastify</span>
-              <span class="tech-item-desc" data-target="90" data-label="Avançado">Avançado (0%)</span>
+              <span class="tech-item-desc" data-target="88" data-level="advanced">Avançado (0%)</span>
             </div>
-            <div class="tech-bar"><div class="tech-progress" data-width="90%"></div></div>
+            <div class="tech-bar"><div class="tech-progress" data-width="88%"></div></div>
           </li>
           <li class="tech-item">
             <div class="tech-item-info">
               <span class="tech-item-name">Java</span>
-              <span class="tech-item-desc" data-target="75" data-label="Intermediário">Intermediário (0%)</span>
+              <span class="tech-item-desc" data-target="72" data-level="intermediate">Intermediário (0%)</span>
             </div>
-            <div class="tech-bar"><div class="tech-progress" data-width="75%"></div></div>
+            <div class="tech-bar"><div class="tech-progress" data-width="72%"></div></div>
           </li>
         </ul>
       </div>
 
-      <!-- Bancos de Dados -->
+      <!-- Mobile -->
       <div class="tech-card reveal-up">
         <div class="tech-category-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
         </div>
-        <h3>Bancos de Dados</h3>
+        <h3 data-i18n="stack.mobile">Mobile</h3>
         <ul class="tech-list">
           <li class="tech-item">
             <div class="tech-item-info">
-              <span class="tech-item-name">SQL (Postgres/SQL Server)</span>
-              <span class="tech-item-desc" data-target="85" data-label="Proficiente">Proficiente (0%)</span>
+              <span class="tech-item-name">React Native</span>
+              <span class="tech-item-desc" data-target="85" data-level="proficient">Proficiente (0%)</span>
             </div>
             <div class="tech-bar"><div class="tech-progress" data-width="85%"></div></div>
           </li>
           <li class="tech-item">
             <div class="tech-item-info">
-              <span class="tech-item-name">MongoDB</span>
-              <span class="tech-item-desc" data-target="80" data-label="Proficiente">Proficiente (0%)</span>
+              <span class="tech-item-name">Expo</span>
+              <span class="tech-item-desc" data-target="80" data-level="proficient">Proficiente (0%)</span>
             </div>
             <div class="tech-bar"><div class="tech-progress" data-width="80%"></div></div>
           </li>
         </ul>
       </div>
 
-      <!-- Ferramentas -->
+      <!-- Databases -->
       <div class="tech-card reveal-up">
         <div class="tech-category-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
         </div>
-        <h3>Ferramentas</h3>
+        <h3 data-i18n="stack.databases">Databases</h3>
+        <ul class="tech-list">
+          <li class="tech-item">
+            <div class="tech-item-info">
+              <span class="tech-item-name">PostgreSQL / SQL Server</span>
+              <span class="tech-item-desc" data-target="85" data-level="proficient">Proficiente (0%)</span>
+            </div>
+            <div class="tech-bar"><div class="tech-progress" data-width="85%"></div></div>
+          </li>
+          <li class="tech-item">
+            <div class="tech-item-info">
+              <span class="tech-item-name">MongoDB</span>
+              <span class="tech-item-desc" data-target="80" data-level="proficient">Proficiente (0%)</span>
+            </div>
+            <div class="tech-bar"><div class="tech-progress" data-width="80%"></div></div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- DevOps -->
+      <div class="tech-card reveal-up">
+        <div class="tech-category-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+        <h3 data-i18n="stack.devops">DevOps & Tools</h3>
         <ul class="tech-list">
           <li class="tech-item">
             <div class="tech-item-info">
               <span class="tech-item-name">Git & GitHub</span>
-              <span class="tech-item-desc" data-target="95" data-label="Avançado">Avançado (0%)</span>
+              <span class="tech-item-desc" data-target="95" data-level="advanced">Avançado (0%)</span>
             </div>
             <div class="tech-bar"><div class="tech-progress" data-width="95%"></div></div>
           </li>
           <li class="tech-item">
             <div class="tech-item-info">
-              <span class="tech-item-name">Insomnia / Postman</span>
-              <span class="tech-item-desc" data-target="90" data-label="Proficiente">Proficiente (0%)</span>
+              <span class="tech-item-name">Docker</span>
+              <span class="tech-item-desc" data-target="68" data-level="familiar">Conhecimento (0%)</span>
             </div>
-            <div class="tech-bar"><div class="tech-progress" data-width="90%"></div></div>
+            <div class="tech-bar"><div class="tech-progress" data-width="68%"></div></div>
           </li>
           <li class="tech-item">
             <div class="tech-item-info">
-              <span class="tech-item-name">AWS Foundations</span>
-              <span class="tech-item-desc" data-target="70" data-label="Conhecimento">Conhecimento (0%)</span>
+              <span class="tech-item-name">AWS</span>
+              <span class="tech-item-desc" data-target="70" data-level="familiar">Conhecimento (0%)</span>
             </div>
             <div class="tech-bar"><div class="tech-progress" data-width="70%"></div></div>
           </li>
@@ -273,124 +297,82 @@
   </section>
 
   <!-- ==========================================================================
-       Experiências Section (Timeline)
-       ========================================================================== */ -->
-  <section id="experience" class="container section-padding">
-    <div class="section-header reveal-up">
-      <span class="section-tag">Jornada</span>
-      <h2 class="section-title">Experiência Profissional</h2>
-      <p class="section-subtitle">Minha história no mercado e a consolidação de conhecimentos técnicos e metodologias ágeis.</p>
-    </div>
-    
-    <div class="timeline">
-      
-      <!-- Experiência 1 -->
-      <div class="timeline-item reveal-left">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <div>
-              <h3 class="timeline-role">Software Engineer</h3>
-              <span class="timeline-company">Hubcar</span>
-            </div>
-            <span class="timeline-date">Março 2025 – Presente</span>
-          </div>
-          <div class="timeline-body">
-            <p>
-              Startup líder em tecnologia de monitoramento inteligente e soluções de mobilidade veicular.
-            </p>
-            <ul class="timeline-bullets">
-              <li>Desenvolvimento e manutenção de portais analíticos e dashboards administrativos com Next.js, React e TypeScript.</li>
-              <li>Construção de rotas, middlewares estruturados e endpoints de API robustos usando Node.js.</li>
-              <li>Integração e modelagem em bancos de dados (PostgreSQL, MongoDB e SQL Server), otimizando consultas de relatórios de tráfego pesado.</li>
-              <li>Colaboração ativa em rituais ágeis (Scrum/Kanban) participando ativamente nas definições de arquitetura e produto.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Experiência 2 -->
-      <div class="timeline-item reveal-right">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <div>
-              <h3 class="timeline-role">Residente Tecnológico</h3>
-              <span class="timeline-company">Porto Digital</span>
-            </div>
-            <span class="timeline-date">Agosto 2024 – Fevereiro 2025</span>
-          </div>
-          <div class="timeline-body">
-            <p>
-              Um dos maiores parques tecnológicos e ambientes de inovação aberta do Brasil.
-            </p>
-            <ul class="timeline-bullets">
-              <li>Desenvolvimento ágil de MVPs focados nas necessidades de empresas do ecossistema pernambucano.</li>
-              <li>Apoio no desenvolvimento de uma ferramenta de curadoria inteligente de conteúdos utilizando IA.</li>
-              <li>Criação de integrações e barramentos de automação conectando ferramentas de no-code/low-code a APIs REST personalizadas.</li>
-              <li>Realização de demonstrações de progresso e demos funcionais periódicas para clientes tradicionais de mercado.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Experiência 3 -->
-      <div class="timeline-item reveal-left">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <div>
-              <h3 class="timeline-role">Graduação em Análise de Sistemas</h3>
-              <span class="timeline-company">CESAR School</span>
-            </div>
-            <span class="timeline-date">Conclusão: 1º Semestre de 2026</span>
-          </div>
-          <div class="timeline-body">
-            <p>
-              Centro acadêmico e tecnológico focado em empreendedorismo, inovação de mercado e desenvolvimento de software ágil.
-            </p>
-            <ul class="timeline-bullets">
-              <li>Estudo direcionado de Engenharia de Software, Algoritmos Avançados, Arquitetura de Computadores e Testes de Software.</li>
-              <li>Projetos Integradores com entrega real de soluções de software aplicadas a empresas reais parceiras do polo.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       Projetos Section
-       ========================================================================== */ -->
+       Featured Projects Section
+       ========================================================================== -->
   <section id="projects" class="container section-padding">
-    <div class="section-header reveal-up">
-      <span class="section-tag">Projetos</span>
-      <h2 class="section-title">Estudos de Caso</h2>
-      <p class="section-subtitle">Aplicações práticas que validam competências técnicas em problemas complexos.</p>
+    <div class="section-header section-header--center reveal-up">
+      <span class="section-tag" data-i18n="projects.tag">Projetos</span>
+      <h2 class="section-title" data-i18n="projects.title">Projetos em Destaque</h2>
+      <p class="section-subtitle" data-i18n="projects.subtitle">Aplicações práticas que validam competências técnicas em problemas reais.</p>
     </div>
-    
+
     <div class="projects-grid stagger-grid">
-      
-      <!-- Projeto 1 -->
+
+      <!-- Projeto 1: Licitações (Mobile mockup) -->
       <div class="project-card reveal-left">
+        <div class="project-mockup project-mockup--mobile" aria-hidden="true">
+          <div class="mockup-phone">
+            <div class="mockup-notch"></div>
+            <div class="mockup-screen">
+              <div class="mk-statusbar">
+                <span>9:41</span>
+                <span class="mk-dots"><i></i><i></i><i></i></span>
+              </div>
+              <div class="mk-appbar">
+                <span class="mk-appbar-title">Editais</span>
+                <span class="mk-avatar"></span>
+              </div>
+              <div class="mk-search"></div>
+              <div class="mk-row">
+                <span class="mk-chip mk-chip--on">ME/EPP</span>
+                <span class="mk-chip">CNAE</span>
+                <span class="mk-chip">UF</span>
+              </div>
+              <div class="mk-list-item">
+                <div class="mk-li-head"><span class="mk-tag mk-tag--green">Aberto</span><span class="mk-score">94%</span></div>
+                <span class="mk-line w-80"></span>
+                <span class="mk-line w-55"></span>
+              </div>
+              <div class="mk-list-item">
+                <div class="mk-li-head"><span class="mk-tag mk-tag--amber">3 dias</span><span class="mk-score">81%</span></div>
+                <span class="mk-line w-70"></span>
+                <span class="mk-line w-45"></span>
+              </div>
+              <div class="mk-list-item">
+                <div class="mk-li-head"><span class="mk-tag mk-tag--green">Aberto</span><span class="mk-score">76%</span></div>
+                <span class="mk-line w-75"></span>
+                <span class="mk-line w-50"></span>
+              </div>
+              <div class="mk-tabbar">
+                <span class="mk-tab mk-tab--on"></span>
+                <span class="mk-tab"></span>
+                <span class="mk-tab"></span>
+                <span class="mk-tab"></span>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="project-content">
           <div class="project-tags">
+            <span class="project-tag project-tag--accent" data-i18n="projects.p1.badge">Projeto Integrador</span>
             <span class="project-tag">React Native</span>
+            <span class="project-tag">Expo</span>
+            <span class="project-tag">TypeScript</span>
             <span class="project-tag">Express</span>
             <span class="project-tag">MongoDB</span>
-            <span class="project-tag">TypeScript</span>
+            <span class="project-tag">WebSocket</span>
           </div>
-          <h3 class="project-title">Licitações Públicas para MEIs</h3>
-          <p class="project-description">
-            Solução móvel projetada para descomplicar a busca e o acesso de microempresas locais a licitações e editais do governo municipal de Recife.
+          <h3 class="project-title" data-i18n="projects.p1.title">Licitações Públicas para MEIs</h3>
+          <p class="project-description" data-i18n="projects.p1.desc">
+            Plataforma full-stack mobile-first que ajuda Microempreendedores Individuais a competir em compras públicas (Lei 14.133/2021): centraliza editais do PNCP, traduz o "juridiquês" e organiza prazos. Desenvolvi o app (React Native) e a API (Express).
           </p>
           <div class="project-highlights">
-            <h4 class="project-highlights-title">Destaques Técnicos</h4>
+            <h4 class="project-highlights-title" data-i18n="projects.highlights">Destaques Técnicos</h4>
             <ul class="project-highlights-list">
-              <li>Desenvolvimento do back-end em Node.js com rotas seguras baseadas em tokens JWT.</li>
-              <li>Modelagem do banco de dados no MongoDB Atlas para cache e indexação de dados públicos de editais.</li>
-              <li>Interface responsiva e navegação estruturada com rotas protegidas no app mobile.</li>
+              <li data-i18n="projects.p1.h1">App mobile-first (React Native + Expo) com busca e filtros avançados e atualização em tempo real de novas licitações via WebSocket.</li>
+              <li data-i18n="projects.p1.h2">Score de compatibilidade por CNAE + tradução do edital em resumo, requisitos e documentos, com checklist de habilitação e alertas de prazo.</li>
+              <li data-i18n="projects.p1.h3">API REST em Express + MongoDB com arquitetura em camadas (routes/controllers/services/repositories) e validação Zod estrita.</li>
+              <li data-i18n="projects.p1.h4">Segurança e conformidade LGPD: JWT, bcrypt, rate limiting, sanitização anti-NoSQL e exportação/exclusão de dados em cascata.</li>
             </ul>
           </div>
           <div class="project-actions">
@@ -402,25 +384,56 @@
         </div>
       </div>
 
-      <!-- Projeto 2 -->
+      <!-- Projeto 2: I.D.E.I.A (Dashboard mockup) -->
       <div class="project-card reveal-right">
+        <div class="project-mockup project-mockup--web" aria-hidden="true">
+          <div class="mockup-browser">
+            <div class="mockup-toolbar">
+              <span class="mk-dot mk-dot--r"></span>
+              <span class="mk-dot mk-dot--y"></span>
+              <span class="mk-dot mk-dot--g"></span>
+              <span class="mk-urlbar"></span>
+            </div>
+            <div class="mockup-app">
+              <aside class="mk-sidebar">
+                <span class="mk-nav mk-nav--on"></span>
+                <span class="mk-nav"></span>
+                <span class="mk-nav"></span>
+                <span class="mk-nav"></span>
+              </aside>
+              <div class="mk-main">
+                <div class="mk-cards">
+                  <div class="mk-stat"><span class="mk-line w-60"></span><span class="mk-num"></span></div>
+                  <div class="mk-stat"><span class="mk-line w-50"></span><span class="mk-num"></span></div>
+                  <div class="mk-stat mk-stat--accent"><span class="mk-line w-55"></span><span class="mk-num"></span></div>
+                </div>
+                <div class="mk-chart">
+                  <svg viewBox="0 0 200 70" preserveAspectRatio="none">
+                    <polyline class="mk-trend" points="0,55 25,48 50,52 75,34 100,38 125,22 150,26 175,10 200,16" />
+                    <polyline class="mk-trend mk-trend--dim" points="0,62 25,58 50,60 75,50 100,54 125,46 150,48 175,40 200,44" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="project-content">
           <div class="project-tags">
             <span class="project-tag">React</span>
             <span class="project-tag">Node.js</span>
             <span class="project-tag">Google Trends API</span>
-            <span class="project-tag">AI Integration</span>
+            <span class="project-tag">AI</span>
           </div>
-          <h3 class="project-title">I.D.E.I.A – Tendências de Notícias</h3>
-          <p class="project-description">
-            Plataforma digital integrada a modelos generativos voltada para redações jornalísticas locais, simplificando a identificação de pautas em alta e estruturando rascunhos de notícias.
+          <h3 class="project-title" data-i18n="projects.p2.title">I.D.E.I.A — Tendências de Notícias</h3>
+          <p class="project-description" data-i18n="projects.p2.desc">
+            Plataforma integrada a modelos generativos para redações jornalísticas, simplificando a identificação de pautas em alta e estruturando rascunhos de notícias.
           </p>
           <div class="project-highlights">
-            <h4 class="project-highlights-title">Destaques Técnicos</h4>
+            <h4 class="project-highlights-title" data-i18n="projects.highlights">Destaques Técnicos</h4>
             <ul class="project-highlights-list">
-              <li>Criação de rotas integradas com a Google Trends API para captação em tempo real de temas em ascensão.</li>
-              <li>Desenvolvimento completo da interface do jornalista com visualizações intuitivas em React.</li>
-              <li>Foco em usabilidade e performance, reduzindo o tempo entre a identificação do tema e a publicação do rascunho inicial.</li>
+              <li data-i18n="projects.p2.h1">Integração com a Google Trends API para captar temas em ascensão em tempo real.</li>
+              <li data-i18n="projects.p2.h2">Interface do jornalista em React com visualizações intuitivas de dados.</li>
+              <li data-i18n="projects.p2.h3">Foco em performance, reduzindo o tempo entre identificação do tema e rascunho.</li>
             </ul>
           </div>
           <div class="project-actions">
@@ -431,32 +444,251 @@
           </div>
         </div>
       </div>
-      
+
+      <!-- Projeto 3: FIT.AI (Mobile fitness mockup) -->
+      <div class="project-card reveal-up">
+        <div class="project-mockup project-mockup--mobile" aria-hidden="true">
+          <div class="mockup-phone">
+            <div class="mockup-notch"></div>
+            <div class="mockup-screen">
+              <div class="mk-statusbar">
+                <span>9:41</span>
+                <span class="mk-dots"><i></i><i></i><i></i></span>
+              </div>
+              <div class="mk-appbar">
+                <span class="mk-appbar-title">FIT.AI</span>
+                <span class="mk-streak">12</span>
+              </div>
+              <div class="mk-fit-banner">
+                <span class="mk-line w-55"></span>
+                <span class="mk-line w-80"></span>
+              </div>
+              <div class="mk-heatmap">
+                <span class="mk-cell mk-cell--l3"></span><span class="mk-cell mk-cell--l1"></span><span class="mk-cell mk-cell--l2"></span><span class="mk-cell mk-cell--l3"></span><span class="mk-cell"></span><span class="mk-cell mk-cell--l2"></span><span class="mk-cell mk-cell--l3"></span>
+                <span class="mk-cell mk-cell--l1"></span><span class="mk-cell mk-cell--l3"></span><span class="mk-cell mk-cell--l3"></span><span class="mk-cell mk-cell--l2"></span><span class="mk-cell mk-cell--l3"></span><span class="mk-cell mk-cell--l1"></span><span class="mk-cell"></span>
+                <span class="mk-cell mk-cell--l2"></span><span class="mk-cell mk-cell--l3"></span><span class="mk-cell mk-cell--l1"></span><span class="mk-cell mk-cell--l3"></span><span class="mk-cell mk-cell--l2"></span><span class="mk-cell mk-cell--l3"></span><span class="mk-cell mk-cell--l2"></span>
+                <span class="mk-cell mk-cell--l3"></span><span class="mk-cell"></span><span class="mk-cell mk-cell--l2"></span><span class="mk-cell mk-cell--l1"></span><span class="mk-cell mk-cell--l3"></span><span class="mk-cell mk-cell--l2"></span><span class="mk-cell mk-cell--l3"></span>
+              </div>
+              <div class="mk-tabbar">
+                <span class="mk-tab mk-tab--on"></span>
+                <span class="mk-tab"></span>
+                <span class="mk-tab"></span>
+                <span class="mk-tab"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="project-tag project-tag--accent" data-i18n="projects.p3.badge">Full-Stack</span>
+            <span class="project-tag">Next.js 16</span>
+            <span class="project-tag">React 19</span>
+            <span class="project-tag">Fastify</span>
+            <span class="project-tag">Prisma</span>
+            <span class="project-tag">PostgreSQL</span>
+            <span class="project-tag">AI SDK</span>
+            <span class="project-tag">Better Auth</span>
+          </div>
+          <h3 class="project-title" data-i18n="projects.p3.title">FIT.AI — Treino com Consistência</h3>
+          <p class="project-description" data-i18n="projects.p3.desc">
+            Aplicação full-stack mobile-first para treinar com consistência: treino do dia, acompanhamento visual de progresso (heatmap/streak) e um coach com IA. Desenvolvi o front (Next.js) e a API (Fastify) de ponta a ponta.
+          </p>
+          <div class="project-highlights">
+            <h4 class="project-highlights-title" data-i18n="projects.highlights">Destaques Técnicos</h4>
+            <ul class="project-highlights-list">
+              <li data-i18n="projects.p3.h1">Front em Next.js (App Router) com Server Components validando sessão no servidor e fluxo de onboarding/plano ativo.</li>
+              <li data-i18n="projects.p3.h2">API REST em Fastify + TypeScript com arquitetura em camadas (routes/usecases/schemas), Prisma e PostgreSQL.</li>
+              <li data-i18n-html="projects.p3.h3">Coach virtual na rota <code>/ai</code> com AI SDK + Google Gemini, capaz de montar planos de treino via tools.</li>
+              <li data-i18n="projects.p3.h4">Login Google com Better Auth e sessão por cookie compartilhada entre front e API; schemas validados com Zod.</li>
+            </ul>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/henryzera" target="_blank" rel="noopener" class="btn-project btn-project--primary" aria-label="Ver código do projeto FIT.AI no GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- ==========================================================================
-       Contato Section
-       ========================================================================== */ -->
-  <section id="contact" class="container section-padding">
-    <div class="section-header reveal-up" style="text-align: center; margin-left: auto; margin-right: auto;">
-      <span class="section-tag">Contato</span>
-      <h2 class="section-title">Vamos Construir Algo Novo?</h2>
-      <p class="section-subtitle">Entre em contato para oportunidades, parcerias de projetos ou apenas trocar experiências.</p>
+       Experience Section (Timeline)
+       ========================================================================== -->
+  <section id="experience" class="container section-padding">
+    <div class="section-header section-header--center reveal-up">
+      <span class="section-tag" data-i18n="exp.tag">Jornada</span>
+      <h2 class="section-title" data-i18n="exp.title">Experiência Profissional</h2>
+      <p class="section-subtitle" data-i18n="exp.subtitle">Contribuições no mercado e consolidação de conhecimentos técnicos e metodologias ágeis.</p>
     </div>
-    
+
+    <div class="timeline">
+
+      <!-- Experiência 1 -->
+      <div class="timeline-item reveal-left">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role" data-i18n="exp.e1.role">Software Engineer</h3>
+              <span class="timeline-company">Hubcar</span>
+            </div>
+            <span class="timeline-date" data-i18n="exp.e1.date">Março 2025 – Presente</span>
+          </div>
+          <div class="timeline-body">
+            <p data-i18n="exp.e1.desc">Startup líder em tecnologia de monitoramento inteligente e soluções de mobilidade veicular.</p>
+            <ul class="timeline-bullets">
+              <li data-i18n="exp.e1.b1">Desenvolvimento de portais analíticos e dashboards administrativos com Next.js, React e TypeScript.</li>
+              <li data-i18n="exp.e1.b2">Construção de rotas, middlewares e endpoints de API robustos com Node.js.</li>
+              <li data-i18n="exp.e1.b3">Modelagem em PostgreSQL, MongoDB e SQL Server, otimizando consultas de relatórios de tráfego pesado.</li>
+              <li data-i18n="exp.e1.b4">Colaboração ativa em rituais ágeis (Scrum/Kanban) e nas definições de arquitetura e produto.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experiência 2 -->
+      <div class="timeline-item reveal-right">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role" data-i18n="exp.e2.role">Residente Tecnológico</h3>
+              <span class="timeline-company">Porto Digital</span>
+            </div>
+            <span class="timeline-date" data-i18n="exp.e2.date">Agosto 2024 – Fevereiro 2025</span>
+          </div>
+          <div class="timeline-body">
+            <p data-i18n="exp.e2.desc">Um dos maiores parques tecnológicos e ambientes de inovação aberta do Brasil.</p>
+            <ul class="timeline-bullets">
+              <li data-i18n="exp.e2.b1">Desenvolvimento ágil de MVPs focados nas necessidades de empresas do ecossistema pernambucano.</li>
+              <li data-i18n="exp.e2.b2">Apoio no desenvolvimento de uma ferramenta de curadoria inteligente de conteúdos com IA.</li>
+              <li data-i18n="exp.e2.b3">Criação de integrações conectando ferramentas no-code/low-code a APIs REST personalizadas.</li>
+              <li data-i18n="exp.e2.b4">Demonstrações de progresso e demos funcionais periódicas para clientes de mercado.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Education & Certifications Section
+       ========================================================================== -->
+  <section id="education" class="container section-padding">
+    <div class="section-header section-header--center reveal-up">
+      <span class="section-tag" data-i18n="edu.tag">Formação</span>
+      <h2 class="section-title" data-i18n="edu.title">Educação & Certificações</h2>
+      <p class="section-subtitle" data-i18n="edu.subtitle">Base acadêmica sólida e aprendizado contínuo em tecnologias de ponta.</p>
+    </div>
+
+    <!-- Degree -->
+    <div class="edu-degree reveal-up">
+      <div class="edu-degree-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+      </div>
+      <div>
+        <h3 class="edu-degree-title" data-i18n="edu.degree.title">Análise e Desenvolvimento de Sistemas</h3>
+        <span class="edu-degree-school">CESAR School</span>
+        <span class="edu-degree-date" data-i18n="edu.degree.date">Conclusão: 1º semestre de 2026</span>
+        <p class="edu-degree-desc" data-i18n="edu.degree.desc">
+          Foco em Engenharia de Software, Algoritmos, Arquitetura e Testes, com projetos integradores entregues a empresas reais parceiras do polo.
+        </p>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <h3 class="edu-certs-heading reveal-up" data-i18n="edu.certsTitle">Certificações</h3>
+    <div class="edu-certs-grid stagger-grid">
+
+      <div class="cert-card reveal-up">
+        <span class="cert-badge cert-badge--rocketseat">RS</span>
+        <div class="cert-info">
+          <h4 class="cert-title">Formação Node.js</h4>
+          <span class="cert-issuer">Rocketseat</span>
+          <span class="cert-date" data-i18n="edu.c1.date">Jun 2026</span>
+          <span class="cert-skills">Node.js · APIs REST</span>
+        </div>
+      </div>
+
+      <div class="cert-card reveal-up">
+        <span class="cert-badge cert-badge--rocketseat">RS</span>
+        <div class="cert-info">
+          <h4 class="cert-title">Ciclo LevelUp CESAR</h4>
+          <span class="cert-issuer">Rocketseat</span>
+          <span class="cert-date" data-i18n="edu.c2.date">Jun 2026</span>
+          <span class="cert-skills" data-i18n="edu.c2.skills">Carreira em tecnologia</span>
+        </div>
+      </div>
+
+      <div class="cert-card reveal-up">
+        <span class="cert-badge cert-badge--aws">AWS</span>
+        <div class="cert-info">
+          <h4 class="cert-title">AWS Cloud Foundations</h4>
+          <span class="cert-issuer">CESAR School</span>
+          <span class="cert-date" data-i18n="edu.c3.date">Jan 2026</span>
+          <span class="cert-skills" data-i18n="edu.c3.skills">Computação em nuvem · AWS</span>
+        </div>
+      </div>
+
+      <div class="cert-card reveal-up">
+        <span class="cert-badge cert-badge--cod3r">C3</span>
+        <div class="cert-info">
+          <h4 class="cert-title">React + Redux — Fundamentos</h4>
+          <span class="cert-issuer">Cod3r</span>
+          <span class="cert-date" data-i18n="edu.c4.date">Set 2025</span>
+          <span class="cert-skills">React.js · Next.js · +3</span>
+        </div>
+      </div>
+
+      <div class="cert-card reveal-up">
+        <span class="cert-badge cert-badge--rocketseat">RS</span>
+        <div class="cert-info">
+          <h4 class="cert-title">CESAR GrowUP</h4>
+          <span class="cert-issuer">Rocketseat</span>
+          <span class="cert-date" data-i18n="edu.c5.date">Mai 2025</span>
+          <span class="cert-skills">Node.js · Knex.js · +4</span>
+        </div>
+      </div>
+
+      <div class="cert-card reveal-up">
+        <span class="cert-badge cert-badge--alura">AL</span>
+        <div class="cert-info">
+          <h4 class="cert-title">Alura Include</h4>
+          <span class="cert-issuer">Alura</span>
+          <span class="cert-date" data-i18n="edu.c6.date">Jul 2024</span>
+          <span class="cert-skills">HTML5 · CSS · +1</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Contact Section
+       ========================================================================== -->
+  <section id="contact" class="container section-padding">
+    <div class="section-header section-header--center reveal-up">
+      <span class="section-tag" data-i18n="contact.tag">Contato</span>
+      <h2 class="section-title" data-i18n="contact.title">Vamos construir algo juntos.</h2>
+      <p class="section-subtitle" data-i18n="contact.subtitle">Estou aberto a oportunidades, parcerias de projeto ou apenas para trocar ideias.</p>
+    </div>
+
     <div class="contact-grid stagger-grid">
-      
+
       <!-- Cartão E-mail -->
       <div class="contact-card reveal-scale">
         <div class="contact-card-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </div>
-        <h3>E-mail</h3>
+        <h3 data-i18n="contact.email">E-mail</h3>
         <p>emanuelhenrysc@gmail.com</p>
         <button id="copy-email-btn" class="contact-btn contact-btn--copy" aria-label="Copiar e-mail para área de transferência">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          <span>Copiar E-mail</span>
+          <span data-i18n="contact.copy">Copiar E-mail</span>
         </button>
       </div>
 
@@ -466,9 +698,9 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         </div>
         <h3>LinkedIn</h3>
-        <p>Conecte-se profissionalmente</p>
+        <p data-i18n="contact.linkedinSub">Conecte-se profissionalmente</p>
         <a href="https://linkedin.com/in/emanuel-henry-3728a9303" target="_blank" rel="noopener" class="contact-btn" aria-label="Visitar meu perfil no LinkedIn">
-          <span>Acessar Perfil</span>
+          <span data-i18n="contact.linkedinBtn">Acessar Perfil</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
         </a>
       </div>
@@ -479,9 +711,9 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
         </div>
         <h3>GitHub</h3>
-        <p>Explore meus repositórios</p>
+        <p data-i18n="contact.githubSub">Explore meus repositórios</p>
         <a href="https://github.com/henryzera" target="_blank" rel="noopener" class="contact-btn" aria-label="Visitar meu perfil no GitHub">
-          <span>Ver Repositórios</span>
+          <span data-i18n="contact.githubBtn">Ver Repositórios</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
         </a>
       </div>
@@ -491,14 +723,18 @@
 
   <!-- ==========================================================================
        Footer
-       ========================================================================== */ -->
+       ========================================================================== -->
   <footer class="footer">
     <div class="container footer-content">
       <div class="footer-logo">
         EH.dev
       </div>
-      <div class="footer-text">
+      <div class="footer-text" data-i18n="footer.text">
         &copy; 2026 Emanuel Henry. Desenvolvido com HTML, CSS e Vanilla JS.
+      </div>
+      <div class="lang-switch lang-switch--footer" role="group" aria-label="Selecionar idioma">
+        <button class="lang-btn" data-lang="pt" type="button" aria-pressed="true">PT</button>
+        <button class="lang-btn" data-lang="en" type="button" aria-pressed="false">EN</button>
       </div>
     </div>
   </footer>
